@@ -1,0 +1,88 @@
+  data_instance acs_partitioned_graph acs_whole_graph_sh acs_whole_graph_gh  \
+0  m4n500s0.inp            1907471.87          1792976.2         1669779.47   
+1  m4n500s1.inp             1882290.9         1772177.17          1647177.1   
+2  m4n500s2.inp             1849791.6          1744799.5         1622559.77   
+3  m4n500s3.inp             1862938.1          1763072.3         1621051.27   
+4  m4n500s4.inp            1917115.43          1818209.6         1692345.97   
+5  m8n500s0.inp             1918195.6         1849191.53         1629913.67   
+6  m8n500s1.inp            1899107.27          1830007.6         1601974.17   
+7  m8n500s2.inp            1911267.93          1814465.3         1618260.03   
+8  m8n500s3.inp            1943364.53         1855759.23          1648850.1   
+9  m8n500s4.inp             1949359.6          1829893.0         1623609.67   
+
+          pso  
+0   2123793.0  
+1  2031471.66  
+2  1976068.33  
+3  2048497.66  
+4  1998835.66  
+5   2067106.0  
+6  2075172.33  
+7  2062448.33  
+8  2121903.66  
+9  2084087.33  
+
+Kruskal-Wallis H Test -> statistic = 36.44049, pvalue = 0.000000060
+The null hypothesis (the median is equal across all methods) is rejected
+
+Significant Kruskal-Wallis H Test => Post Hoc Testing
+Dunn Test
+                       acs_partitioned_graph  acs_whole_graph_sh  \
+acs_partitioned_graph               1.000000            0.365189   
+acs_whole_graph_sh                  0.365189            1.000000   
+acs_whole_graph_gh                  0.000846            0.320263   
+pso                                 0.320263            0.000846   
+
+                       acs_whole_graph_gh           pso  
+acs_partitioned_graph        8.462548e-04  3.202626e-01  
+acs_whole_graph_sh           3.202626e-01  8.462548e-04  
+acs_whole_graph_gh           1.000000e+00  5.741609e-08  
+pso                          5.741609e-08  1.000000e+00  
+
+Between the methods acs_partitioned_graph and acs_whole_graph_gh is a statistically significant difference with pvalue = 0.000846
+Between the methods acs_whole_graph_sh and pso is a statistically significant difference with pvalue = 0.000846
+Between the methods acs_whole_graph_gh and pso is a statistically significant difference with pvalue = 0.000000
+
+Friedman Test based on Chi Square Distribution -> statistic = 30.00000, pvalue = 0.000001380
+The null hypothesis (all the methods have the same average ranking / probability distribution) is rejected
+
+Significant Friedman Test based on Chi Square Distribution => Post Hoc Testing
+Nemenyi Friedman Test
+                       acs_partitioned_graph  acs_whole_graph_sh  \
+acs_partitioned_graph                1.00000             0.30713   
+acs_whole_graph_sh                   0.30713             1.00000   
+acs_whole_graph_gh                   0.00299             0.30713   
+pso                                  0.30713             0.00299   
+
+                       acs_whole_graph_gh      pso  
+acs_partitioned_graph             0.00299  0.30713  
+acs_whole_graph_sh                0.30713  0.00299  
+acs_whole_graph_gh                1.00000  0.00100  
+pso                               0.00100  1.00000  
+
+Between the methods acs_partitioned_graph and acs_whole_graph_gh is a statistically significant difference with pvalue = 0.002990
+Between the methods acs_whole_graph_sh and pso is a statistically significant difference with pvalue = 0.002990
+Between the methods acs_whole_graph_gh and pso is a statistically significant difference with pvalue = 0.001000
+
+
+Significant Friedman Test based on Chi Square Distribution => Post Hoc Testing
+Paired Comparison from Paper
+                       acs_partitioned_graph  acs_whole_graph_sh  \
+acs_partitioned_graph                    0.0                10.0   
+acs_whole_graph_sh                      10.0                 0.0   
+acs_whole_graph_gh                      20.0                10.0   
+pso                                     10.0                20.0   
+
+                       acs_whole_graph_gh   pso  
+acs_partitioned_graph                20.0  10.0  
+acs_whole_graph_sh                   10.0  20.0  
+acs_whole_graph_gh                    0.0  30.0  
+pso                                  30.0   0.0  
+
+Between the methods acs_partitioned_graph and acs_whole_graph_sh is a statistically significant difference with value = 10.0
+Between the methods acs_partitioned_graph and acs_whole_graph_gh is a statistically significant difference with value = 20.0
+Between the methods acs_partitioned_graph and pso is a statistically significant difference with value = 10.0
+Between the methods acs_whole_graph_sh and acs_whole_graph_gh is a statistically significant difference with value = 10.0
+Between the methods acs_whole_graph_sh and pso is a statistically significant difference with value = 20.0
+Between the methods acs_whole_graph_gh and pso is a statistically significant difference with value = 30.0
+

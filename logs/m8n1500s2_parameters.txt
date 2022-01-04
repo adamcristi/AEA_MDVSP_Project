@@ -1,0 +1,10 @@
+m8n1500s2
+number_particles=40
+runs=3
+iterations=1000
+inertia_weight=0.5
+acceleration_factor_1=2.05
+acceleration_factor_2=2.05
+minimum_velocity=-6
+maximum_velocity=6
+inertia_type=<bound method PSOAlgorithm.iws_sigmoid_curve of <pso.pso_algorithm.PSOAlgorithm object at 0x00000224F815CC18>>

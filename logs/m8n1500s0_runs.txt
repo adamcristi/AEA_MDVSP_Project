@@ -1,0 +1,8 @@
+Run 0: value_global_best = 5795373 ;    number_particle_minimum_personal_best = 27 ;    value_minimum_personal_best = 5795373 ;    number_particle_minimum_best_iteration = 0 ;    value_best_iteration = 2580001793106 ;    
+Run 1: value_global_best = 5951975 ;    number_particle_minimum_personal_best = 14 ;    value_minimum_personal_best = 5951975 ;    number_particle_minimum_best_iteration = 0 ;    value_best_iteration = 2740001729752 ;    
+Run 2: value_global_best = 5747350 ;    number_particle_minimum_personal_best = 14 ;    value_minimum_personal_best = 5747350 ;    number_particle_minimum_best_iteration = 0 ;    value_best_iteration = 2650001864099 ;    
+
+
+Runs: min_global_best = 5747350 ;    max_global_best = 5951975 ;    mean_global_best = 5831566.0 ;    std_global_best = 87370.08486127655 ;    
+      min_minimum_personal_best = 5747350 ;    max_minimum_personal_best = 5951975 ;    mean_minimum_personal_best = 5831566.0 ;    std_minimum_personal_best = 87370.08486127655 ;    
+      min_best_iteration = 2580001793106 ;    max_best_iteration = 2740001729752 ;    mean_best_iteration = 2656668462319.0 ;    std_best_iteration = 65489579733.731606 ;    
